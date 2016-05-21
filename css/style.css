@@ -1,0 +1,732 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,200,500,700);
+
+
+
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+dfn,
+del,
+p,
+blockquote,
+fieldset,
+input,
+textarea,
+select,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+button,
+canvas,
+video {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+address,
+caption,
+cite,
+code,
+th,
+dfn,
+del {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+fieldset,
+img {
+    border: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+    cursor: pointer
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+input[type="search"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+input,
+button,
+textarea {
+    line-height: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input[type="hidden"],
+[hidden],
+.hidden {
+    display: none
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+.clearfix {
+    display: block
+}
+
+audio,
+canvas,
+video {
+    display: inline-block
+}
+
+a > img {
+    vertical-align: bottom
+}
+
+strong,
+.strong,
+b {
+    font-weight: bold
+}
+
+em,
+.italic,
+i {
+    font-style: italic
+}
+
+del,
+.del {
+    text-decoration: line-through
+}
+
+:focus {
+    outline: none
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+iframe {
+    width: 60%;
+    height: 400px;
+
+  }
+
+/* tools --------------------------  */
+
+.clear {
+    clear: both;
+    display: block;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.clearfix:after,
+.wrap:after,
+.spanning:after,
+.content:after,
+.main:after,
+aside:after,
+section:after,
+article:after,
+.text:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.align-left {
+    float: left !important
+}
+
+.align-right {
+    float: right !important
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    display: block;
+}
+/*html { 
+  background: url(../images/header.jpg) no-repeat 50% 50%; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}*/
+
+html {
+    height: 100%;
+    background: white;
+}
+
+body {
+    height: 100%;
+    font: 16px/28px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.main {
+    min-height: 100%;
+    overflow: hidden;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrap {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px;
+}
+
+a {
+    color: #10bbf1;
+    cursor: pointer;
+    background: transparent;
+    text-decoration: none;
+}
+
+header {
+   background: url(../images/header.jpg) no-repeat 50% 50%; 
+   background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100vh;
+    padding-top: 180px;
+    text-align: center;
+    font: 24px/36px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+header h1 {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 30px;
+    font-weight: 500;
+    margin-bottom: 38px;
+    display: inline-block;
+    margin-right: -30px;
+    position: relative;
+}
+
+header p {
+    font-weight: lighter;
+}
+
+header .buttons-wrapper {
+    padding-top: 53px
+}
+
+header .buttons-wrapper .button-stripe {
+    margin-left: 14px
+}
+
+.button {
+    color: white;
+    background: #10bbf1;
+    height: 58px;
+    border: 2px solid #10bbf1;
+    font: 500 22px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0 21px;
+    -moz-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -ms-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -o-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -webkit-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background: #40c9f4;
+    border-color: #40c9f4;
+}
+
+.button:active {
+    background: #0b97c3;
+    border-color: #0b97c3;
+}
+
+a.button {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 54px;
+    color: white;
+}
+
+a.button:hover {
+    color: white
+}
+
+a.button:active {
+    color: white
+}
+
+a.button.button-stripe {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: white;
+}
+
+a.button.button-stripe:hover {
+    color: #222222;
+    background-color: white;
+    border-color: white;
+}
+
+a.button.button-stripe:active {
+    color: #222222;
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+}
+
+
+
+/* About --------------------------  */
+
+.discover {
+    /*padding: 114px 0 54px;*/
+    /*padding: 31px 0 25px;*/
+    background: #fafafa;
+}
+
+.discover-content {
+    float: right;
+    width: 50%;
+    padding: 77px 97px 50px 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.discover-content h2 {
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: bold;
+    margin-bottom: 29px;
+}
+
+.discover-button {
+    padding-top: 68px;
+    margin: 0 -10px;
+    clear: both;
+}
+
+.discover-img {
+    float: none;
+    width: auto;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.discover-img img{
+      width: 370px;
+      height: 400px;
+  }
+
+.video-title {
+    font: bold 48px/48px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.video-subtitle {
+    font-size: 19px;
+    line-height: 25px;
+    color: #919191;
+    text-align: center;
+}
+
+.video {
+    padding: 60px 0 60px
+}
+
+.video-block {
+    padding-top: 34px;
+    margin: 0 auto 32px;
+/*    max-width: 50vw;
+    max-height: 50vh;*/
+    text-align:center;
+}
+
+.video-share-wrapper {
+    clear: both;
+    text-align: center;
+}
+
+
+.social-list {
+    display: inline-block
+}
+
+.social-list li {
+    font-size: 19px;
+    line-height: 38px;
+    float: left;
+    margin: 0 9px;
+}
+
+.social-list li a {
+    font-size: 15px;
+    line-height: 38px;
+    display: block;
+    width: 160px;
+    height: 38px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #3bcbff;
+    color: white;
+    text-align: center;
+    -moz-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -ms-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -o-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -webkit-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+}
+
+.social-list li a:hover {
+    background-color: #6ed9ff
+}
+
+.social-list li a:active {
+    background-color: #08bdff
+}
+
+.social-list li a.social-facebook {
+    background-color: #1e3aa6
+}
+
+.social-list li a.social-facebook:hover {
+    background-color: #2649d1
+}
+
+.social-list li a.social-facebook:active {
+    background-color: #162b7b
+}
+
+.social-list li a.social-google {
+    background-color: #d72d26
+}
+
+.social-list li a.social-google:hover {
+    background-color: #e05650
+}
+
+.social-list li a.social-google:active {
+    background-color: #ac241e
+}
+
+
+/* Footer --------------------------  */
+
+footer {
+    background: #324a57;
+    color: white;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 5px 0;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+/*.promo {
+    padding: 114px 0 54px
+}
+
+.promo-wrapper {
+    margin: 0 -15px
+}
+
+.promo-column {
+    padding: 0 15px 60px;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+.promo-column img {
+    display: block;
+    margin-bottom: 23px;
+}
+
+.promo-column h5 {
+    font: bold 18px/24px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}*/
+
+@media (max-width: 979px) { 
+
+  .header-img {
+      display: none
+  }
+
+  .header-wrapper {
+      padding-top: 0;
+      max-width: none;
+  }
+
+  header {
+      padding-top: 150px;
+      text-align: center;
+      font-size: 19px;
+      line-height: 28px;
+
+      background-attachment: scroll;
+  
+  }
+
+  header h1 {
+      font-size: 46px;
+      line-height: 52px;
+  }
+
+  header p {
+      padding: 10px;
+  }
+
+  header .buttons-wrapper .button {
+      margin-bottom: 20px
+  }
+
+
+
+  .video-title {
+      font-size: 36px;
+      line-height: 46px;
+  }
+
+  .video-block {
+    padding-top: 34px;
+    margin: 0 auto 32px;
+/*    max-width: 50vw;
+    max-height: 50vh;*/
+}
+
+iframe {
+    width: 67%;
+    height: 300px;
+
+  }
+
+  .social-list li {
+      float: none;
+      text-align: center;
+      padding-top: 20px;
+  }
+
+  .social-list li:first-child {
+      padding-top: 0
+  }
+
+  .social-list li a {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .discover-content {
+      float: none;
+      width: auto;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+  }
+
+  .discover-content h2 {
+      font-size: 60px;
+      line-height: 60px;
+  }
+
+  .discover-content p {
+    padding: 10px;
+}
+
+  .discover-img {
+      float: none;
+      width: auto;
+      padding-left: 0%;
+  }
+
+  .discover-img img{
+      width: 100%;
+      height: 50%;
+      padding-left: none;
+
+  }
+
+  .discover-img img {
+      margin: 0 auto
+  }
+
+  .discover-button {
+      text-align: center
+  }
+
+  .discover-button .button-download {
+      float: none;
+      display: inline-block;
+  }
+
+}
+
+@media (max-width: 979px) { 
+
+  .header-wrapper {
+      padding-top: 0;
+      max-width: none;
+  }
+
+  header {
+      text-align: center;
+      font-size: 19px;
+      line-height: 28px;
+  }
+
+  header h1 {
+      font-size: 10vw;
+      line-height: 52px;
+      letter-spacing: 20px;
+      margin-right: -20px;
+  }
+
+  header .buttons-wrapper .button {
+      margin-bottom: 20px
+  }
+
+  }
+
+
+  @media (max-width: 700px) { 
+
+    iframe {
+     width: 70%;
+     height: 250px;
+    }
+
+  }
+
+   @media (max-width: 600px) { 
+
+    iframe {
+     width: 90%;
+     height: 250px;
+    }
+
+  }
+
+  @media (max-width: 550px) { 
+
+    iframe {
+     width: 97%;
+     height: 200px;
+    }
+
+  }
